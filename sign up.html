@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Authentication with firebase</title>
+
+    <script src="https://www.gstatic.com/firebasejs/5.7.2/firebase.js"></script>
+
+    <style>
+        #app{
+        width:50%;
+        margin: 100px auto;
+        }
+        .hide{
+        display: none;
+        }
+    </style>
+</head>
+<body>
+    <div id="app">
+        <input type="email" id="txtEmail" placeholder="Enter email" /> <br/>
+        <input type="password" id="txtPassword" placeholder="Enter password" /><br/>
+        <button id="btnLogin" >Log in</button>
+        <button id="btnSignUp" >Sign Up</button>
+        <button id="btnLogOut" class="hide" >Log Out</button>
+        <button id="withFB">Log In with FaceBook</button>
+        <button id="withGithub">Log In with GitHub</button>
+    </div>
+    <div id="results"></div>
+    <script>
+      // Initialize Firebase
+      var config = {
+        apiKey: "AIzaSyBkb4ODd5mfuHjROTSieBhvgKZNN24fJdo",
+        authDomain: "crime-project-ef909.firebaseapp.com",
+        databaseURL: "https://crime-project-ef909.firebaseio.com",
+        projectId: "crime-project-ef909",
+        storageBucket: "crime-project-ef909.appspot.com",
+        messagingSenderId: "969686629227"
+      };
+      firebase.initializeApp(config);
+    </script>
+    <script  src="appp.js"></script>
+</body>
+</html>
+
+</body>
+</html>
